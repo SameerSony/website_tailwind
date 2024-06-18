@@ -1,2 +1,33 @@
 
- 
+ /* Header.css */
+
+/* Other existing styles */
+
+/* Mobile Navbar Styles */
+@media (max-width: 768px) {
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mobile-nav a {
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: white;
+    text-decoration: none;
+  }
+
+  .mobile-nav a:hover {
+    color: #ccc;
+  }
+
+  .mobile-nav-close {
+    font-size: 3rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
