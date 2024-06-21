@@ -1,0 +1,11 @@
+.card {
+  @apply bg-white p-6 rounded-lg shadow-lg;
+}
+
+.card-title {
+  @apply text-2xl font-semibold mb-4;
+}
+
+.card-content {
+  @apply text-gray-700;
+}

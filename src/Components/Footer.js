@@ -2,14 +2,14 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-12 text-center relative">
+    <footer className="bg-black text-white py-10 text-center relative">
       <div className="container mx-auto flex flex-col items-center">
-        <div className="flex justify-between items-start w-full max-w-7xl px-8">
+        <div className="flex justify-between items-start w-full max-w-7xl px-2">
           <div className="flex flex-col items-start">
-            <img src="logo.png" alt="X Factor Bizz Logo" className="w-32 mb-6" />
-            <p className="text-left text-lg">X Factor Bizz: Elevating brands through strategic influencer marketing.</p>
+            <img src="CSQUARE_MEDIA_transparent_resized_croped.png" alt="X Factor Bizz Logo" className="w-32 mb-6" />
+            <p className="text-left text-lg">CSQUARE MEDIA: Elevating brands through strategic influencer marketing.</p>
           </div>
-          <div className="flex flex-col items-start space-y-6 text-lg">
+          <div className="flex flex-col items-start space-y-6 text-lg px-16">
             <a href="#youtube" className="hover:text-gray-400">YOUTUBE</a>
             <a href="#linkedin" className="hover:text-gray-400">LINKEDIN</a>
             <a href="#instagram" className="hover:text-gray-400">INSTAGRAM</a>

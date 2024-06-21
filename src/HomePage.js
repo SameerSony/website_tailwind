@@ -1,7 +1,4 @@
-import { BrowserRouter,Router,Route } from 'react-router-dom';
-
-
-
+import logo from './logo.svg';
 import './App.css';
 import Navbar from './Components/Navbar';
 import Header from './Components/Header';
@@ -11,15 +8,20 @@ import ServicesSection from './Components/ServiceSection';
 import TeamSection from './Components/TeamSectionHome';
 import Clients from './Components/ClientsGrayBg';
 import WhyChooseUs from './Components/WhyChooseUs';
-import Home from './HomePage';
-import About from './AboutPage';
-import ServicesPage from './ServicesPage';
-function App() {
+
+function Home() {
   return (
     <div>
-      <ServicesPage />
+      <Header />
+      <ServicesSection />
+      <Clients />
+      
+      <TeamSection />
+      <WhyChooseUs />
+      <Footer />
+     
     </div>
   );
 }
 
-export default App;
+export default Home;

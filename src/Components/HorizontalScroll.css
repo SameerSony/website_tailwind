@@ -1,12 +1,10 @@
-.scroll-container {
+.carousel-container {
   width: 100vw;
   height: 100vh;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  display: flex;
-  white-space: nowrap;
+  overflow: hidden;
 }
 
-.scroll-container::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
+.slide {
+  width: 100vw;
+  height: 100vh;
 }

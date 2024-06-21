@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import './Header.css'; // Import the CSS file for styling
 import { Link } from 'react-router-dom';
 import './script.js';
 import Navbar from './Navbar.js';
 import Logo from './logo.js';
+import HomePage from '../HomePage.js';
+
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +21,9 @@ const Header = () => {
           loop
           muted
         />
+        <div>
+      <button type='button' class='py-2.5 px-6 text-sm border border-gray-300 rounded-full shadow-xs bg-white font-semibold text-gray-900 transition-all duration-500 hover:bg-gray-50 z-20'>Outline</button>
+      </div>
         <video
           className="absolute w-full h-full object-cover block md:hidden"
           src="mobile_background_video.mp4"
@@ -25,6 +31,9 @@ const Header = () => {
           loop
           muted
         />
+        <div>
+      <button type='button' class='py-2.5 px-6 text-sm border border-gray-300 rounded-full shadow-xs bg-white font-semibold text-gray-900 transition-all duration-500 hover:bg-gray-50 z-20'>Outline</button>
+      </div>
       </div>
       <nav className="relative z-10 bg-black bg-opacity-75 p-4">
         <div className="container mx-auto flex justify-between items-center">
@@ -35,7 +44,7 @@ const Header = () => {
             
           </div>
           <div className="hidden md:flex flex-grow justify-center space-x-4">
-            <a href="#home" className="text-white">Home</a>
+            <a href={<HomePage />} target={<HomePage />} className="text-white">Home</a>
             <a href="#about" className="text-white">About Us</a>
             <a href="#services" className="text-white">Our Services</a>
             <a href="#portfolio" className="text-white">Portfolio</a>
@@ -154,6 +163,9 @@ const Header = () => {
           </div>
         )}
       </nav>
+      
+
+      
     </header>
   );
 };
