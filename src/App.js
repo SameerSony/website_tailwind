@@ -14,10 +14,11 @@ import WhyChooseUs from './Components/WhyChooseUs';
 import Home from './HomePage';
 import About from './AboutPage';
 import ServicesPage from './ServicesPage';
+import ContactUs from './ContactUs';
 function App() {
   return (
     <div>
-      <ServicesPage />
+      <ContactUs />
     </div>
   );
 }

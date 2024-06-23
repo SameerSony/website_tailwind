@@ -210,22 +210,22 @@ const Header = () => {
       
       <div classname="container mx-auto">
         
-        <div className=" bg-lime-100 text-white p-4    flex flex-row">
+        <div className=" bg-black text-white p-4    flex flex-row">
         <div classname="w-1/3 h-auto">
-                <h2 className=" text-black  text-6xl font-semibold">
+                <h2 className=" text-white  text-6xl font-semibold">
                 GUIDANCE
                 </h2>
-                <h2 className=" text-black  text-6xl font-semibold ">
+                <h2 className=" text-white  text-6xl font-semibold ">
                 WE 
                 </h2>
-                <h2 className=" text-black  text-6xl  font-semibold">
+                <h2 className=" text-white  text-6xl  font-semibold">
                     PROVIDE
                 </h2>
                 
 
             </div>
             <div classname=" w-2/3 h-auto ">
-            <h2 className="text-black font-mono text-4xl text-wrap ml-40 mt-32">
+            <h2 className="text-white font-mono text-4xl text-wrap ml-40 mt-32">
                 With every single one of our clients we bring forth a deep passion for creative roblem solving innovations forward thinking brands boundaries
             </h2>
             </div>
@@ -233,9 +233,9 @@ const Header = () => {
         </div>
 
         <div classname="container mx-auto">
-            <div classname="bg-lime-100 p-4 flex flex-row">
+            <div classname="bg-black p-4 flex flex-row">
                 <div classname="w-1/3 h-auto bg-black flex flex-row">
-                <div className="bg-lime-100 p-6 rounded-lg ">
+                <div className="bg-black p-6 rounded-lg ">
                    
                    
                    
@@ -247,13 +247,13 @@ const Header = () => {
                    
                    
                    
-                    <div className=" bg-lime-100 text-black py-10 overflow-x-hidden">
+                    <div className=" bg-black text-white py-10 overflow-x-hidden">
                         <h1 className="text-center text-4xl font-bold mb-10">OUR GLOBAL CLIENTS</h1>
                         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 mx-auto max-w-screen-lg">
                             {clients.map((client, index) => (
                                     <div
                                         key={index}
-                                        className="flex justify-center items-center p-4 bg-lime-100 rounded-lg opacity-0 animate-fade-in"
+                                        className="flex justify-center items-center p-4 bg-black  rounded-lg opacity-0 animate-fade-in"
                                         style={{ animationDelay: `${index * 0.2}s` }}
                                     >
                                         <img src={client.logo} alt={client.name} className="max-h-20" />
@@ -264,16 +264,16 @@ const Header = () => {
 
 
 
-                                    <div className="flex flex-col items-center justify-center min-h-screen py-8 bg-lime-100">
+                                    <div className="flex flex-col items-center justify-center min-h-screen py-8 bg-black">
                     
                     <div className="flex flex-col items-center gap-8 w-full px-4 md:px-8 lg:px-16">
                         
                         
 
-                        <div className="bg-lime-100 p-6 rounded-lg shadow-lg w-9/10 h-9/10">
-                        <div className="text-2xl font-semibold mb-4 ml-96 mr-96 text-center border-2 border-black rounded-full text-gray-700">Realize Your Potential </div>
-                        <h1 className="text-8xl text-black m-10 text-center  font-normal">
-                            We Would Love To Hear More About Your Project 
+                        <div className="bg-black p-6 rounded-lg shadow-lg w-9/10 h-9/10">
+                        <div className="text-2xl font-semibold mb-4 ml-96 mr-96 text-center border-2 border-gray-500 rounded-full text-white font-serif">Realize Your Potential </div>
+                        <h1 className="text-8xl text-white m-10 text-center  font-normal">
+                            We Would Love To Hear More About Your Project !
                         </h1>
                         <div className="px-4 ml-72 -mr-48 mt-32 mb-32">
                             <button 
@@ -281,7 +281,7 @@ const Header = () => {
                             onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave}
                             type='button' 
-                            className='w-40 h-40 justify-center border border-black rounded-full shadow-xs bg-transparent font-semibold text-black transition-transform duration-300 hover:bg-black hover:text-white items-center text-xl'>
+                            className='w-40 h-40 ml-80 justify-center border border-gray-500 rounded-full shadow-xs bg-transparent font-semibold text-white transition-transform duration-300 hover:bg-white hover:text-black items-center text-xl'>
                             Contact Us
                             </button>
                         </div>

@@ -31,7 +31,7 @@ const CardSection = () => {
   ];
 
   return (
-    <div className="bg-lime-100 p-10">
+    <div className="bg-black p-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {services.map((service, index) => (
           <ServicePageCard key={index} title={service.title} items={service.items} />
