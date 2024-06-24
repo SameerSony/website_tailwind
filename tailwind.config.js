@@ -10,6 +10,7 @@ module.exports = {
       customGreen: '#10B981',
       customGray: '#1D1D1D',
       customWhite:'#CCCBCB',
+      'half-screen': '50vh',
     },
     transitionProperty: {
       'flex-grow': 'flex-grow',

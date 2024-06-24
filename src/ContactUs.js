@@ -25,9 +25,9 @@ const ContactUs = () => {
     return (
 
 
-        <div className='bg-white'>
-            <header className="relative ">
-            <nav className="relative z-10 bg-white bg-opacity-75 p-4 ">
+        <div className='bg-white w-screen'>
+            <header className="fixed w-full">
+            <nav className="relative z-10 bg-white  p-4 ">
                 <div className="container mx-auto flex justify-between items-center">
                     <div className="flex items-center space-x-4">
                         <div className=" w-auto">

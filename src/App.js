@@ -15,10 +15,11 @@ import Home from './HomePage';
 import About from './AboutPage';
 import ServicesPage from './ServicesPage';
 import ContactUs from './ContactUs';
+import Portfolio from './PortfolioPage';
 function App() {
   return (
     <div>
-      <ContactUs />
+      <Portfolio />
     </div>
   );
 }
