@@ -1,4 +1,4 @@
-import { BrowserRouter,Router,Route } from 'react-router-dom';
+import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
 
 
 
@@ -11,16 +11,22 @@ import ServicesSection from './Components/ServiceSection';
 import TeamSection from './Components/TeamSectionHome';
 import Clients from './Components/ClientsGrayBg';
 import WhyChooseUs from './Components/WhyChooseUs';
-import Home from './HomePage';
-import About from './AboutPage';
+import HomePage from './HomePage';
+import AboutPage from './AboutPage';
 import ServicesPage from './ServicesPage';
 import ContactUs from './ContactUs';
-import Portfolio from './PortfolioPage';
+import PortfolioPage from './PortfolioPage';
 function App() {
   return (
-    <div>
-      <Portfolio />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="/contact" element={<ContactUs />} />
+      </Routes>
+    </Router>
   );
 }
 
