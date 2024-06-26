@@ -2,22 +2,22 @@ import React from 'react';
 import './Clients.css'; // Import the custom CSS
 
 const clients = [
-  { name: 'IKEA', logo: 'IKEA.png' },
-  { name: 'Swiggy', logo: '/public/SWIGGY.png' },
-  { name: 'TVS', logo: '/public/bird_2.jpg' },
-  { name: 'BP', logo: '/public/BP.png' },
-  { name: 'Nescafe', logo: '/public/NESCAFE.png' },
-  { name: 'Cashify', logo: '/public/CASHIFY.png' },
-  { name: 'Mahindra', logo: '/public/MAHINDRA.png' },
-  { name: 'MR.DIY', logo: 'path/to/mrdiy-logo.png' },
-  { name: 'LOFA', logo: 'path/to/lofa-logo.png' },
-  { name: 'Le Meridien', logo: 'path/to/lemeridien-logo.png' },
-  { name: 'Fashion Factory', logo: 'path/to/fashionfactory-logo.png' },
-  { name: 'KIA', logo: 'path/to/kia-logo.png' },
-  { name: 'Asian Paints', logo: 'path/to/asianpaints-logo.png' },
-  { name: 'Theka', logo: 'path/to/theka-logo.png' },
-  { name: 'MBA Chai Wala', logo: 'path/to/mbachaiwala-logo.png' },
-  { name: 'More...', logo: 'path/to/more-logo.png' },
+  { name: 'IKEA', src: 'IKEA.png' },
+  { name: 'Swiggy', src: 'SWIGGY.png' },
+  { name: 'TVS', src: 'bird_2.jpg' },
+  { name: 'BP', src: 'BP.png' },
+  { name: 'Nescafe', src: 'NESCAFE.png' },
+  { name: 'Cashify', src: '/CASHIFY.png' },
+  { name: 'Mahindra', src: 'MAHINDRA.png' },
+  { name: 'MR.DIY', src: 'path/to/mrdiy-logo.png' },
+  { name: 'LOFA', src: 'path/to/lofa-logo.png' },
+  { name: 'Le Meridien', src: 'path/to/lemeridien-logo.png' },
+  { name: 'Fashion Factory', src: 'path/to/fashionfactory-logo.png' },
+  { name: 'KIA', src: 'path/to/kia-logo.png' },
+  { name: 'Asian Paints', src: 'path/to/asianpaints-logo.png' },
+  { name: 'Theka', src: 'path/to/theka-logo.png' },
+  { name: 'MBA Chai Wala', src: 'path/to/mbachaiwala-logo.png' },
+  { name: 'More...', src: 'path/to/more-logo.png' },
 ];
 
 const Gallery = () => {
@@ -31,7 +31,7 @@ const Gallery = () => {
             className="flex justify-center items-center p-4 bg-white rounded-lg opacity-0 animate-fade-in"
             style={{ animationDelay: `${index * 0.2}s` }}
           >
-            <img src={client.logo} alt={client.name} className="max-h-20" />
+            <img src={client.src} alt={client.name} className="max-h-20" />
           </div>
         ))}
       </div>
