@@ -2,13 +2,13 @@ import React from 'react';
 import './Clients.css'; // Import the custom CSS
 
 const clients = [
-  { name: 'IKEA', logo: 'path/to/ikea-logo.png' },
-  { name: 'Swiggy', logo: 'path/to/swiggy-logo.png' },
-  { name: 'TVS', logo: 'path/to/tvs-logo.png' },
-  { name: 'BP', logo: 'path/to/bp-logo.png' },
-  { name: 'Nescafe', logo: 'path/to/nescafe-logo.png' },
-  { name: 'Cashify', logo: 'path/to/cashify-logo.png' },
-  { name: 'Mahindra', logo: 'path/to/mahindra-logo.png' },
+  { name: 'IKEA', logo: 'IKEA.png' },
+  { name: 'Swiggy', logo: '/public/SWIGGY.png' },
+  { name: 'TVS', logo: '/public/bird_2.jpg' },
+  { name: 'BP', logo: '/public/BP.png' },
+  { name: 'Nescafe', logo: '/public/NESCAFE.png' },
+  { name: 'Cashify', logo: '/public/CASHIFY.png' },
+  { name: 'Mahindra', logo: '/public/MAHINDRA.png' },
   { name: 'MR.DIY', logo: 'path/to/mrdiy-logo.png' },
   { name: 'LOFA', logo: 'path/to/lofa-logo.png' },
   { name: 'Le Meridien', logo: 'path/to/lemeridien-logo.png' },

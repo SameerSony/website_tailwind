@@ -6,31 +6,31 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const images = [
   {
-    src: 'https://via.placeholder.com/400x300',
+    src: 'Random_person1.webp',
     alt: 'Image 1',
     title: 'Image 1',
     description: 'This is the first image'
   },
   {
-    src: 'https://via.placeholder.com/400x300',
+    src: 'Random_person1.webp',
     alt: 'Image 2',
     title: 'Image 2',
     description: 'This is the second image'
   },
   {
-    src: 'https://via.placeholder.com/400x300',
+    src: 'Random_person1.webp',
     alt: 'Image 3',
     title: 'Image 3',
     description: 'This is the third image'
   },
   {
-    src: 'https://via.placeholder.com/400x300',
+    src: 'Random_person1.webp',
     alt: 'Image 4',
     title: 'Image 4',
     description: 'This is the fourth image'
   },
   {
-    src: 'https://via.placeholder.com/400x300',
+    src: 'Random_person1.webp',
     alt: 'Image 5',
     title: 'Image 5',
     description: 'This is the fifth image'
@@ -83,7 +83,7 @@ const ImageCarousel = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-lg">
               <img src={image.src} alt={image.alt} className="w-full h-64 object-cover" />
               <div className="p-4">
-                <h3 className="text-lg font-semibold">{image.title}</h3>
+                <h3 className="text-lg font-semibold text-black text-center">{image.title}</h3>
                 <p className="text-gray-600">{image.description}</p>
               </div>
             </div>

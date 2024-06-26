@@ -53,7 +53,7 @@ const ServicesSection = () => {
       onMouseMove={handleMouseMove}
       ref={containerRef}
     >
-      <h2 className="text-4xl font-bold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-red-500 via-purple-500 to-blue-500">
+      <h2 className="text-4xl font-bold text-center mb-8 bg-clip-text text-transparent bg-orange-500">
         OUR SERVICES
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto max-w-7xl px-4">

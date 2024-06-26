@@ -8,10 +8,10 @@ import Logo from './Components/logo.js';
 
 const PortfolioPage = () => {
   const [images, setImages] = useState([
-    '/path/to/your/portfolio1.png',
-    '/path/to/your/portfolio2.png',
-    '/path/to/your/portfolio3.png',
-    '/path/to/your/portfolio4.png',
+    'media_coverage1.jpg',
+    'media_coverage2.jpg',
+    'media_coverage1.jpg',
+    'media_coverage1.jpg',
   ]);
   const [imageInput, setImageInput] = useState('');
   const [isAdmin, setIsAdmin] = useState(false); // Change this to control admin access
@@ -104,12 +104,14 @@ const PortfolioPage = () => {
 
   return (
     <div className="bg-black text-white min-h-screen flex flex-col">
-      <header className="fixed w-full">
-        <nav className="relative z-10 bg-black bg-opacity-75 p-4">
+      <header className="fixed w-full z-50">
+        <nav className="relative z-10 bg-black  p-4">
           <div className="container mx-auto flex justify-between items-center">
             <div className="flex items-center space-x-4">
               <div className=" w-auto">
+              <Link to='/'>
                 <Logo />
+                </Link>
               </div>
             </div>
             <div className="hidden md:flex flex-grow justify-center space-x-4">
@@ -171,12 +173,14 @@ const PortfolioPage = () => {
               </div>
               <div className="hidden md:flex flex-col justify-between space-y-8">
                 <div>
-                  <Logo />
+                <Link to='/'>
+                <Logo />
+                </Link>
                 </div>
                 <div className="hidden md:block">
                   <h2 className="text-xl font-bold mb-2">Follow Us</h2>
                   <ul className="space-y-1">
-                    <li><a href="#" className="hover:underline">Instagram</a></li>
+                    <li><a href="https://www.instagram.com/mr.rahuldongre/?igsh=bnV4Z2lwbWthMmsw" target='_blank' className="hover:underline">Instagram</a></li>
                     <li><a href="#" className="hover:underline">Facebook</a></li>
                     <li><a href="#" className="hover:underline">Youtube</a></li>
                   </ul>
@@ -219,9 +223,9 @@ const PortfolioPage = () => {
                 </div>
                 <div className="hidden md:block">
                   <h2 className="text-xl font-bold mb-2">Get in touch</h2>
-                  <p className="mb-1">+91 9226539462</p>
-                  <p className="mb-1">nagpurxfactorb@gmail.com</p>
-                  <p>Khamla Square, Nagpur, Maharashtra, India</p>
+                  <p className="mb-1">+91 XXXXXXXXXXXXX</p>
+                <p className="mb-1">csquare_media@gmail.com</p>
+                <p> Nagpur, Maharashtra, India</p>
                 </div>
                 <div className="flex flex-col items-center space-y-4"></div>
               </div>
@@ -238,13 +242,13 @@ const PortfolioPage = () => {
         </div>
       </div>
       <div className={`bg-black py-20 flex-1 flex flex-col justify-center ${isOpen ? 'hidden' : 'block'}`}>
-        <h2 className="text-3xl font-bold text-center mb-10">MEDIA COVERAGE</h2>
+        <h2 className="text-6xl font-bold font-serif text-center mb-10">MEDIA COVERAGE</h2>
         <div className="container mx-auto px-4 max-h-half-screen ">
           {images.length > 0 ? (
             <Slider {...settings}>
               {images.map((image, index) => (
                 <div key={index} className="px-2 relative">
-                  <div className="bg-gray-800 p-4 rounded-lg">
+                  <div className="bg-black p-4 rounded-lg">
                     <img src={image} alt={`Media Coverage ${index + 1}`} className="w-full h-auto rounded-lg max-h-half-screen" />
                     {isAdmin && (
                       <button

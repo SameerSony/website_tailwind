@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './WhyChooseUs.css';
 import { Button } from "@material-tailwind/react";
+import { Link } from 'react-router-dom'; 
 
 const WhyChooseUs = () => {
   const buttonRef = useRef(null);
@@ -170,13 +171,16 @@ const WhyChooseUs = () => {
             Looking for elevating your brand visibility!
           </h1>
           <div className="px-4 ml-64 pl-auto mt-32 mb-32">
+          <Link to='/contact'>
             <button 
               ref={buttonRef}
               onMouseEnter={handleMouseEnter}
               type='button' 
               className='w-40 h-40 border border-gray-300 rounded-full shadow-xs bg-transparent font-semibold text-gray-400 transition-transform duration-300 hover:bg-white hover:text-black items-center text-xl'>
-              Contact Us
+                Contact Us
+              
             </button>
+            </Link>
           </div>
         </div>
       </div>

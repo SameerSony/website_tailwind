@@ -66,7 +66,9 @@ const ServicesPage = () => {
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-4">
             <div className=" w-auto">
-            <Logo />
+            <Link to='/'>
+                <Logo />
+                </Link>
             </div>
             
           </div>
@@ -130,12 +132,14 @@ const ServicesPage = () => {
             </div>
             <div className="hidden md:flex flex-col justify-between space-y-8">
               <div>
+              <Link to='/'>
                 <Logo />
+                </Link>
               </div>
               <div className="hidden md:block">
                 <h2 className="text-xl font-bold mb-2">Follow Us</h2>
                 <ul className="space-y-1">
-                  <li><a href="#" className="hover:underline">Instagram</a></li>
+                  <li><a href="https://www.instagram.com/mr.rahuldongre/?igsh=bnV4Z2lwbWthMmsw" target='_balnk' className="hover:underline">Instagram</a></li>
                   <li><a href="#" className="hover:underline">Facebook</a></li>
                   <li><a href="#" className="hover:underline">Youtube</a></li>
                 </ul>
@@ -180,9 +184,9 @@ const ServicesPage = () => {
               </div>
               <div className="hidden md:block">
                 <h2 className="text-xl font-bold mb-2">Get in touch</h2>
-                <p className="mb-1">+91 9226539462</p>
-                <p className="mb-1">nagpurxfactorb@gmail.com</p>
-                <p>Khamla Square, Nagpur, Maharashtra, India</p>
+                <p className="mb-1">+91 XXXXXXXXXXXXX</p>
+                <p className="mb-1">csquare_media@gmail.com</p>
+                <p> Nagpur, Maharashtra, India</p>
               </div>
               <div className="flex flex-col items-center space-y-4"></div>
             </div>
