@@ -2,22 +2,18 @@ import React from 'react';
 import './Clients.css'; // Import the custom CSS
 
 const clients = [
-  { name: 'IKEA', src: 'IKEA.png' },
-  { name: 'Swiggy', src: 'SWIGGY.png' },
-  { name: 'TVS', src: 'bird_2.jpg' },
-  { name: 'BP', src: 'BP.png' },
   { name: 'Nescafe', src: 'NESCAFE.png' },
   { name: 'Cashify', src: 'CASHIFY.png' },
   { name: 'Mahindra', src: 'MAHINDRA.png' },
   { name: 'MR.DIY', src: 'MR.DIY.png' },
   { name: 'LOFA', src: 'LOFA.png' },
-  { name: 'Le Meridien', src: 'path/to/lemeridien-logo.png' },
+  { name: 'Le Meridien', src: 'XERO_DEGREE.png' },
   { name: 'Fashion Factory', src: 'FASHION_FACTORY.png' },
   { name: 'KIA', src: 'KIA.png' },
-  { name: 'Asian Paints', src: 'NPM.png' },
+  { name: 'Asian Paints', src: 'TVS.png' },
   { name: 'Theka', src: 'THEKA.png' },
   { name: 'MBA Chai Wala', src: 'MBA_CHAI.png' },
-  { name: 'More...', src: 'NPM.png' },
+  { name: 'More...', src: 'CAFFEINE.png' },
 ];
 
 const Gallery = () => {

@@ -42,7 +42,6 @@ const Reviews = () => {
     <div className="flex flex-col items-center justify-center min-h-screen py-8 bg-white">
       <h1 className="text-6xl font-bold mb-8 font-serif text-gray-700">Reviews</h1>
       <div className="flex flex-col items-center gap-8 w-full px-4 md:px-8 lg:px-16">
-        
         <div className="bg-white rounded-lg">
           <div className="flex flex-row gap-4 ml-32">
             <div className="pr-8 bg-white rounded-lg">
@@ -84,14 +83,13 @@ const Reviews = () => {
           </div>
         </div>
 
-        <div className="bg-white p-6 rounded-lg shadow-lg w-9/10 h-9/10">
+        <div className="bg-white p-6 rounded-lg shadow-lg w-full h-9/10 flex flex-col items-center">
           <h3 className="text-2xl font-semibold mb-4 text-center text-gray-700">Have a project in mind? </h3>
           <h1 className="text-8xl text-gray-700 m-10 text-center font-thin font-normal">
             Looking for elevating your brand visibility!
           </h1>
-          <div className="px-4 ml-72 -mr-48 mt-32 mb-32">
+          <div className="flex justify-center items-center w-full mt-32 mb-32">
             <button 
-           
               ref={buttonRef}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
@@ -99,7 +97,6 @@ const Reviews = () => {
               className='w-40 h-40 border border-gray-300 rounded-full shadow-xs bg-transparent font-semibold text-gray-400 transition-transform duration-300 hover:bg-white hover:text-black items-center text-xl'>
                 <Link to="/contact">
                 Contact Us</Link>
-              
             </button>
           </div>
         </div>

@@ -9,156 +9,153 @@ import Footer from './Components/Footer.js';
 const AboutPage = () => {
   const [isOpen, setIsOpen] = useState(false);
   const clients = [
-    { name: 'IKEA', src: 'IKEA.png' },
-  { name: 'Swiggy', src: 'SWIGGY.png' },
-  { name: 'TVS', src: 'bird_2.jpg' },
-  { name: 'BP', src: 'BP.png' },
-  { name: 'Nescafe', src: 'NESCAFE.png' },
-  { name: 'Cashify', src: 'CASHIFY.png' },
-  { name: 'Mahindra', src: 'MAHINDRA.png' },
-  { name: 'MR.DIY', src: 'MR.DIY.png' },
-  { name: 'LOFA', src: 'LOFA.png' },
-  { name: 'Le Meridien', src: 'path/to/lemeridien-logo.png' },
-  { name: 'Fashion Factory', src: 'FASHION_FACTORY.png' },
-  { name: 'KIA', src: 'KIA.png' },
-  { name: 'Asian Paints', src: 'NPM.png' },
-  { name: 'Theka', src: 'THEKA.png' },
-  { name: 'MBA Chai Wala', src: 'MBA_CHAI.png' },
-  { name: 'More...', src: 'NPM.png' },
+    { name: 'Nescafe', src: 'NESCAFE.png' },
+    { name: 'Cashify', src: 'CASHIFY.png' },
+    { name: 'Mahindra', src: 'MAHINDRA.png' },
+    { name: 'MR.DIY', src: 'MR.DIY.png' },
+    { name: 'LOFA', src: 'LOFA.png' },
+    { name: 'Le Meridien', src: 'XERO_DEGREE.png' },
+    { name: 'Fashion Factory', src: 'FASHION_FACTORY.png' },
+    { name: 'KIA', src: 'KIA.png' },
+    { name: 'Asian Paints', src: 'TVS.png' },
+    { name: 'Theka', src: 'THEKA.png' },
+    { name: 'MBA Chai Wala', src: 'MBA_CHAI.png' },
+    { name: 'More...', src: 'CAFFEINE.png' },
   ];
 
   return (
-    <div className='bg-white'>
-      <header className="relative">
-        <nav className="relative z-10 bg-black py-6">
-          <div className="container mx-auto flex justify-between items-center">
-            <div className="flex items-center space-x-4">
-              <div className="w-auto">
-                <Link to='/'>
-                  <Logo />
-                </Link>
-              </div>
-            </div>
-            <div className="hidden md:flex flex-grow justify-center space-x-4 text-center">
-              <Link to="/" className="text-white font-serif">Home</Link>
-              <Link to="/about" className="text-white font-serif">About Us</Link>
-              <Link to="/services" className="text-white font-serif">Our Services</Link>
-              <Link to="/portfolio" className="text-white font-serif">Portfolio</Link>
-              <Link to="/contact" className="text-white font-serif">Contact Us</Link>
-            </div>
-            <div>
-              <button
-                onClick={() => setIsOpen(!isOpen)}
-                className="text-white focus:outline-none"
-                aria-label="Toggle menu"
-              >
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  {isOpen ? (
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  ) : (
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4 6h16M4 12h16m-7 6h7"
-                    />
-                  )}
-                </svg>
-              </button>
-            </div>
-          </div>
-          {isOpen && (
-            <div className="fixed inset-0 z-50 bg-black text-white grid grid-cols-1 md:grid-cols-3 gap-4 p-8">
-              <div className="flex flex-col justify-between space-y-8 md:hidden">
-                <nav className="flex flex-col space-y-4 mt-8">
-                  <Link to="/" className="text-2xl">Home</Link>
-                  <Link to="/about" className="text-2xl">About Us</Link>
-                  <Link to="/services" className="text-2xl">Our Services</Link>
-                  <Link to="/portfolio" className="text-2xl">Portfolio</Link>
-                  <Link to="/contact" className="text-2xl">Contact Us</Link>
-                </nav>
-                <button
-                  onClick={() => setIsOpen(false)}
-                  className="text-white text-3xl focus:outline-none"
-                  aria-label="Close menu"
-                >
-                  &times;
-                </button>
-              </div>
-              <div className="hidden md:flex flex-col justify-between space-y-8">
-                <div>
-                  <Link to='/'>
-                    <Logo />
-                  </Link>
-                </div>
-                <div className="hidden md:block">
-                  <h2 className="text-xl font-bold mb-2">Follow Us</h2>
-                  <ul className="space-y-1">
-                    <li><a href="https://www.instagram.com/mr.rahuldongre/?igsh=bnV4Z2lwbWthMmsw" target='_blank' className="hover:underline">Instagram</a></li>
-                    <li><a href="#" className="hover:underline">Facebook</a></li>
-                    <li><a href="#" className="hover:underline">YouTube</a></li>
-                  </ul>
-                </div>
-                <div className="flex flex-col items-center space-y-4 items-baseline border-spacing-1 border-orange-800 font-bold">
-                  <Link to='/about' className="text-center">About</Link>
-                  <Link to='/contact' className="text-center">Contact</Link>
-                  <Link to='/services' className="text-center">Career</Link>
-                </div>
-              </div>
-              <div className="hidden md:flex flex-col justify-between space-y-8 border border-gray-700 border-spacing-1">
-                <div className="flex flex-col items-center space-y-4"></div>
-                <nav className="flex flex-col space-y-4 mt-8">
-                  <Link to="/" className="text-5xl pl-4 pt-2 pb-2">Home</Link>
-                  <Link to="/about" className="text-5xl pl-4 pt-2 pb-2">About Us</Link>
-                  <Link to="/services" className="text-5xl pl-4 pt-2 pb-2">Our Services</Link>
-                  <Link to="/portfolio" className="text-5xl pl-4 pt-2 pb-2">Portfolio</Link>
-                  <Link to="/contact" className="text-5xl pl-4 pt-2 pb-2">Contact Us</Link>
-                </nav>
-                <div className="mean-container">
-                  <div className="mean-push float-left w-full p-0 m-0 clear-both"></div>
-                </div>
-              </div>
-              <div className="hidden md:flex flex-col justify-between space-y-8 border border-gray-700 border-collapse">
-                <div className="flex justify-end">
-                  <button
-                    onClick={() => setIsOpen(false)}
-                    className="text-white text-3xl focus:outline-none"
-                    aria-label="Close menu"
-                  >
-                    &times;
-                  </button>
-                </div>
-                <div className="mt-[10vh] flex flex-col items-center">
-                  <input
-                    type="text"
-                    className="w-full p-2 mb-4 rounded bg-gray-900 text-white focus:outline-none rounded-full"
-                    placeholder="Search keyword"
-                  />
-                </div>
-                <div className="hidden md:block">
-                  <h2 className="text-xl font-bold mb-2">Get in touch</h2>
-                  <p className="mb-1">+91 XXXXXXXXXXXXX</p>
-                  <p className="mb-1">csquare_media@gmail.com</p>
-                  <p>Nagpur, Maharashtra, India</p>
-                </div>
-                <div className="flex flex-col items-center space-y-4"></div>
-              </div>
-            </div>
+    <div className='bg-white overflow-x-hidden'>
+      <header className="relative ">
+      <nav className="relative z-10 bg-black h-[8vh]">
+  <div className="container mx-auto flex justify-between items-center h-full">
+    <div className="flex items-center space-x-4">
+      <div className="w-auto h-full flex items-center">
+        <Link to='/'>
+          <Logo />
+        </Link>
+      </div>
+    </div>
+    <div className="hidden md:flex flex-grow justify-center space-x-4 text-center">
+      <Link to="/" className="text-white font-serif">Home</Link>
+      <Link to="/about" className="text-white font-serif">About Us</Link>
+      <Link to="/services" className="text-white font-serif">Our Services</Link>
+      <Link to="/portfolio" className="text-white font-serif">Portfolio</Link>
+      <Link to="/contact" className="text-white font-serif">Contact Us</Link>
+    </div>
+    <div>
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="text-white focus:outline-none"
+        aria-label="Toggle menu"
+      >
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          {isOpen ? (
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          ) : (
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
           )}
+        </svg>
+      </button>
+    </div>
+  </div>
+  {isOpen && (
+    <div className="fixed inset-0 z-50 bg-black text-white grid grid-cols-1 md:grid-cols-3 gap-4 p-8">
+      <div className="flex flex-col justify-between space-y-8 md:hidden">
+        <nav className="flex flex-col space-y-4 mt-8">
+          <Link to="/" className="text-2xl">Home</Link>
+          <Link to="/about" className="text-2xl">About Us</Link>
+          <Link to="/services" className="text-2xl">Our Services</Link>
+          <Link to="/portfolio" className="text-2xl">Portfolio</Link>
+          <Link to="/contact" className="text-2xl">Contact Us</Link>
         </nav>
+        <button
+          onClick={() => setIsOpen(false)}
+          className="text-white text-3xl focus:outline-none"
+          aria-label="Close menu"
+        >
+          &times;
+        </button>
+      </div>
+      <div className="hidden md:flex flex-col justify-between space-y-8">
+        <div>
+          <Link to='/'>
+            <Logo />
+          </Link>
+        </div>
+        <div className="hidden md:block">
+          <h2 className="text-xl font-bold mb-2">Follow Us</h2>
+          <ul className="space-y-1">
+            <li><a href="https://www.instagram.com/mr.rahuldongre/?igsh=bnV4Z2lwbWthMmsw" target='_blank' className="hover:underline">Instagram</a></li>
+            <li><a href="#" className="hover:underline">Facebook</a></li>
+            <li><a href="#" className="hover:underline">YouTube</a></li>
+          </ul>
+        </div>
+        <div className="flex flex-col items-center space-y-4 items-baseline border-spacing-1 border-orange-800 font-bold">
+          <Link to='/about' className="text-center">About</Link>
+          <Link to='/contact' className="text-center">Contact</Link>
+          <Link to='/services' className="text-center">Career</Link>
+        </div>
+      </div>
+      <div className="hidden md:flex flex-col justify-between space-y-8 border border-gray-700 border-spacing-1">
+        <div className="flex flex-col items-center space-y-4"></div>
+        <nav className="flex flex-col space-y-4 mt-8">
+          <Link to="/" className="text-5xl pl-4 pt-2 pb-2">Home</Link>
+          <Link to="/about" className="text-5xl pl-4 pt-2 pb-2">About Us</Link>
+          <Link to="/services" className="text-5xl pl-4 pt-2 pb-2">Our Services</Link>
+          <Link to="/portfolio" className="text-5xl pl-4 pt-2 pb-2">Portfolio</Link>
+          <Link to="/contact" className="text-5xl pl-4 pt-2 pb-2">Contact Us</Link>
+        </nav>
+        <div className="mean-container">
+          <div className="mean-push float-left w-full p-0 m-0 clear-both"></div>
+        </div>
+      </div>
+      <div className="hidden md:flex flex-col justify-between space-y-8 border border-gray-700 border-collapse">
+        <div className="flex justify-end">
+          <button
+            onClick={() => setIsOpen(false)}
+            className="text-white text-3xl focus:outline-none"
+            aria-label="Close menu"
+          >
+            &times;
+          </button>
+        </div>
+        <div className="mt-[10vh] flex flex-col items-center">
+          <input
+            type="text"
+            className="w-full p-2 mb-4 rounded bg-gray-900 text-white focus:outline-none rounded-full"
+            placeholder="Search keyword"
+          />
+        </div>
+        <div className="hidden md:block">
+          <h2 className="text-xl font-bold mb-2">Get in touch</h2>
+          <p className="mb-1">+91 XXXXXXXXXXXXX</p>
+          <p className="mb-1">csquare_media@gmail.com</p>
+          <p>Nagpur, Maharashtra, India</p>
+        </div>
+        <div className="flex flex-col items-center space-y-4"></div>
+      </div>
+    </div>
+  )}
+</nav>
+
       </header>
-      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8 overflow-x-hidden">
         <div className="bg-white text-white p-4 border-2 border-customWhite -mt-16 md:ml-20 lg:ml-44 md:mr-20 lg:mr-44">
           <div className="w-full h-full">
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-mono text-gray-900 mt-24">

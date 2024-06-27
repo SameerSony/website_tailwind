@@ -6,31 +6,31 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const images = [
   {
-    src: 'Random_person1.webp',
+    src: 'Random_Person1.png',
     alt: 'Image 1',
     title: 'Image 1',
     description: 'This is the first image'
   },
   {
-    src: 'Random_person1.webp',
+    src: 'Random_Person1.png',
     alt: 'Image 2',
     title: 'Image 2',
     description: 'This is the second image'
   },
   {
-    src: 'Random_person1.webp',
+    src: 'Random_Person1.png',
     alt: 'Image 3',
     title: 'Image 3',
     description: 'This is the third image'
   },
   {
-    src: 'Random_person1.webp',
+    src: 'Random_Person1.png',
     alt: 'Image 4',
     title: 'Image 4',
     description: 'This is the fourth image'
   },
   {
-    src: 'Random_person1.webp',
+    src: 'Random_Person1.png',
     alt: 'Image 5',
     title: 'Image 5',
     description: 'This is the fifth image'
