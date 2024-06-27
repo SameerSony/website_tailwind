@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const images = [
   {
-    src: 'Random_person1.webp',
+    src: 'bird_2.jpg',
     alt: 'Image 1',
     title: 'Image 1',
     description: 'This is the first image'
@@ -81,7 +81,7 @@ const ImageCarousel = () => {
         {images.map((image, index) => (
           <div key={index} className="px-2">
             <div className="bg-white rounded-lg overflow-hidden shadow-lg">
-              <img src={image.src} alt={image.alt} className="w-full h-64 object-cover" />
+              <img src={image.src} alt={image.alt} type="image/webp" className="w-full h-64 object-cover" />
               <div className="p-4">
                 <h3 className="text-lg font-semibold text-center">{image.title}</h3>
                 <p className="text-gray-600">{image.description}</p>
