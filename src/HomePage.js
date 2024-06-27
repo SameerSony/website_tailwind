@@ -43,7 +43,7 @@ function HomePage() {
     <div className=' bg-customGray'>
       <header className="relative h-screen">
         
-        <nav className="relative z-10 bg-black  py-6">
+        <nav className="relative z-10 bg-black h- py-6">
           <div className="container mx-auto flex justify-between items-center">
             <div className="flex items-center space-x-4">
               <div className=" w-auto ">

@@ -66,7 +66,7 @@ const ServicesPage = () => {
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-4">
             <div className=" w-auto">
-            <Link to='/'>
+                <Link to='/'>
                 <Logo />
                 </Link>
             </div>
