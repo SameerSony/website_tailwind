@@ -40,9 +40,8 @@ function HomePage() {
   };
 
   return (
-    <div className=' bg-customGray'>
+    <div className='bg-customGray overflow-x-hidden'>
       <header className="relative h-screen">
-        
         <nav className="relative z-10 bg-black h- py-6">
           <div className="container mx-auto flex justify-between items-center">
             <div className="flex items-center space-x-4">
@@ -170,33 +169,33 @@ function HomePage() {
             </div>
           )}
         </nav>
-        
       </header>
 
       <div className="absolute inset-0 overflow-hidden">
-          <video
-            className="absolute w-full h-full object-cover hidden md:block"
-            src="desktop_background_video.mp4"
-            autoPlay
-            loop
-            muted
-          />
-          <video
-            className="absolute w-full h-full object-cover block md:hidden"
-            src="mobile_background_video.mp4"
-            autoPlay
-            loop
-            muted
-          />
-        </div>
-      <div className='w-full bg-customGray flex flex-row'>
-        <div className='bg-customGray justify-center'>
-          <img src='Brand_Icon.svg' alt='Brand' className='scale-50'></img>
+        <video
+          className="absolute w-full h-full object-cover hidden md:block"
+          src="desktop_background_video.mp4"
+          autoPlay
+          loop
+          muted
+        />
+        <video
+          className="absolute w-full h-full object-cover block md:hidden"
+          src="mobile_background_video.mp4"
+          autoPlay
+          loop
+          muted
+        />
+      </div>
+
+      <div className='w-full bg-customGray flex flex-col lg:flex-row'>
+        <div className='bg-customGray flex flex-col items-center lg:w-1/2'>
+          <img src='Brand_Icon.svg' alt='Brand' className='scale-50 lg:scale-75'></img>
           <div className="flex justify-center mt-4">
-            <div className='px-10 py-4 rounded-full shadow-md bg-white scale-75'>
+            <div className='px-6 py-4 rounded-full shadow-md bg-white scale-75 lg:scale-100'>
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="bg-white text-black font-serif px-9 py-3 rounded-full shadow-md hover:bg-orange-600 scale-110"
+                className="bg-white text-black font-serif px-6 py-3 rounded-full shadow-md hover:bg-orange-600"
                 style={{
                   backgroundImage: 'url(/path/to/I_am_a_brand.png)',
                   backgroundSize: 'cover',
@@ -249,13 +248,13 @@ function HomePage() {
             </div>
           )}
         </div>
-        <div className='bg-customGray justify-center'>
-          <img src='Influencer.png' alt='Brand' className='h-auto max-w-36 mt-20 ml-10 mb-14'></img>
+        <div className='bg-customGray flex flex-col items-center lg:w-1/2'>
+          <img src='Influencer.png' alt='Brand' className='h-auto max-w-36 mt-10 lg:mt-20 ml-10 mb-14'></img>
           <div className="flex justify-center mt-4">
-            <div className='px-10 py-4 rounded-full shadow-md bg-white scale-75'>
+            <div className='px-6 py-4 rounded-full shadow-md bg-white scale-75 lg:scale-100'>
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="bg-white text-black px-8 py-2 font-serif rounded-full shadow-md hover:bg-orange-600 scale-110"
+                className="bg-white text-black px-6 py-2 font-serif rounded-full shadow-md hover:bg-orange-600"
                 style={{
                   backgroundImage: 'url(/path/to/I_am_a_brand.png)',
                   backgroundSize: 'cover',
@@ -323,6 +322,7 @@ function HomePage() {
           )}
         </div>
       </div>
+
       <ServicesSection />
       <Clients />
       <TeamSection />

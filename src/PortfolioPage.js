@@ -105,21 +105,21 @@ const PortfolioPage = () => {
   return (
     <div className="bg-black text-white min-h-screen flex flex-col">
       <header className="fixed w-full z-50">
-        <nav className="relative z-10 bg-black  p-4">
-          <div className="container mx-auto flex justify-between items-center">
+        <nav className="relative z-10 bg-black h- py-6">
+          <div className="container mx-auto flex justify-between items-center px-4 md:px-8">
             <div className="flex items-center space-x-4">
-              <div className=" w-auto">
-              <Link to='/'>
-                <Logo />
+              <div className=" w-auto ">
+                <Link to='/'>
+                  <Logo />
                 </Link>
               </div>
             </div>
-            <div className="hidden md:flex flex-grow justify-center space-x-4">
-              <Link to="/" className="text-white">Home</Link>
-              <Link to="/about" className="text-white">About Us</Link>
-              <Link to="/services" className="text-white">Our Services</Link>
-              <Link to="/portfolio" className="text-white">Portfolio</Link>
-              <Link to="/contact" className="text-white">Contact Us</Link>
+            <div className="hidden md:flex flex-grow justify-center space-x-4 text-center">
+              <Link to="/" className="text-white font-serif">Home</Link>
+              <Link to="/about" className="text-white font-serif">About Us</Link>
+              <Link to="/services" className="text-white font-serif">Our Services</Link>
+              <Link to="/portfolio" className="text-white font-serif">Portfolio</Link>
+              <Link to="/contact" className="text-white font-serif">Contact Us</Link>
             </div>
             <div>
               <button
@@ -173,16 +173,16 @@ const PortfolioPage = () => {
               </div>
               <div className="hidden md:flex flex-col justify-between space-y-8">
                 <div>
-                <Link to='/'>
-                <Logo />
-                </Link>
+                  <Link to='/'>
+                    <Logo />
+                  </Link>
                 </div>
                 <div className="hidden md:block">
                   <h2 className="text-xl font-bold mb-2">Follow Us</h2>
                   <ul className="space-y-1">
                     <li><a href="https://www.instagram.com/mr.rahuldongre/?igsh=bnV4Z2lwbWthMmsw" target='_blank' className="hover:underline">Instagram</a></li>
                     <li><a href="#" className="hover:underline">Facebook</a></li>
-                    <li><a href="#" className="hover:underline">Youtube</a></li>
+                    <li><a href="#" className="hover:underline">YouTube</a></li>
                   </ul>
                 </div>
                 <div className="flex flex-col items-center space-y-4 items-baseline border-spacing-1 border-orange-800 font-bold">
@@ -224,8 +224,8 @@ const PortfolioPage = () => {
                 <div className="hidden md:block">
                   <h2 className="text-xl font-bold mb-2">Get in touch</h2>
                   <p className="mb-1">+91 XXXXXXXXXXXXX</p>
-                <p className="mb-1">csquare_media@gmail.com</p>
-                <p> Nagpur, Maharashtra, India</p>
+                  <p className="mb-1">csquare_media@gmail.com</p>
+                  <p>Nagpur, Maharashtra, India</p>
                 </div>
                 <div className="flex flex-col items-center space-y-4"></div>
               </div>
@@ -235,15 +235,15 @@ const PortfolioPage = () => {
       </header>
       <div className="container mx-auto px-4 py-20 flex-1">
         <div className="text-center">
-          <h1 className="text-5xl font-bold">Spotlight: Our Media Coverage, News, and Portfolio</h1>
+          <h1 className="text-3xl md:text-5xl font-bold mt-40">Spotlight: Our Media Coverage, News, and Portfolio</h1>
           <p className="text-lg mt-4">
             Unlock the X Factor Bizz: Explore Our Brand's Latest Buzz, Media Coverage, News Highlights, and Diverse Portfolio.
           </p>
         </div>
       </div>
       <div className={`bg-black py-20 flex-1 flex flex-col justify-center ${isOpen ? 'hidden' : 'block'}`}>
-        <h2 className="text-6xl font-bold font-serif text-center mb-10">MEDIA COVERAGE</h2>
-        <div className="container mx-auto px-4 max-h-half-screen ">
+        <h2 className="text-4xl md:text-6xl font-bold font-serif text-center mb-10">MEDIA COVERAGE</h2>
+        <div className="container mx-auto px-4 max-h-half-screen">
           {images.length > 0 ? (
             <Slider {...settings}>
               {images.map((image, index) => (

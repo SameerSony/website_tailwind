@@ -2,22 +2,22 @@ import React from 'react';
 import './Clients.css'; // Import the custom CSS
 
 const clients = [
-  { name: 'IKEA', logo: 'path/to/ikea-logo.png' },
-  { name: 'Swiggy', logo: 'path/to/swiggy-logo.png' },
-  { name: 'TVS', logo: 'path/to/tvs-logo.png' },
-  { name: 'BP', logo: 'path/to/bp-logo.png' },
-  { name: 'Nescafe', logo: 'path/to/nescafe-logo.png' },
-  { name: 'Cashify', logo: 'path/to/cashify-logo.png' },
-  { name: 'Mahindra', logo: 'path/to/mahindra-logo.png' },
-  { name: 'MR.DIY', logo: 'path/to/mrdiy-logo.png' },
-  { name: 'LOFA', logo: 'path/to/lofa-logo.png' },
-  { name: 'Le Meridien', logo: 'path/to/lemeridien-logo.png' },
-  { name: 'Fashion Factory', logo: 'path/to/fashionfactory-logo.png' },
-  { name: 'KIA', logo: 'path/to/kia-logo.png' },
-  { name: 'Asian Paints', logo: 'path/to/asianpaints-logo.png' },
-  { name: 'Theka', logo: 'path/to/theka-logo.png' },
-  { name: 'MBA Chai Wala', logo: 'path/to/mbachaiwala-logo.png' },
-  { name: 'More...', logo: 'path/to/more-logo.png' },
+  { name: 'IKEA', src: 'IKEA.png' },
+  { name: 'Swiggy', src: 'SWIGGY.png' },
+  { name: 'TVS', src: 'bird_2.jpg' },
+  { name: 'BP', src: 'BP.png' },
+  { name: 'Nescafe', src: 'NESCAFE.png' },
+  { name: 'Cashify', src: 'CASHIFY.png' },
+  { name: 'Mahindra', src: 'MAHINDRA.png' },
+  { name: 'MR.DIY', src: 'MR.DIY.png' },
+  { name: 'LOFA', src: 'LOFA.png' },
+  { name: 'Le Meridien', src: 'path/to/lemeridien-logo.png' },
+  { name: 'Fashion Factory', src: 'FASHION_FACTORY.png' },
+  { name: 'KIA', src: 'KIA.png' },
+  { name: 'Asian Paints', src: 'NPM.png' },
+  { name: 'Theka', src: 'THEKA.png' },
+  { name: 'MBA Chai Wala', src: 'MBA_CHAI.png' },
+  { name: 'More...', src: 'NPM.png' },
 ];
 
 const Gallery = () => {
@@ -28,10 +28,10 @@ const Gallery = () => {
         {clients.map((client, index) => (
           <div
             key={index}
-            className="flex justify-center items-center p-4 bg-gray-800 rounded-lg opacity-0 animate-fade-in"
+            className="flex justify-center items-center p-4 bg-customGray rounded-lg opacity-0 animate-fade-in scale-150"
             style={{ animationDelay: `${index * 0.2}s` }}
           >
-            <img src={client.logo} alt={client.name} className="max-h-20" />
+            <img src={client.src} alt={client.name} className="max-h-20" />
           </div>
         ))}
       </div>
